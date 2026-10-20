@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commit-scope-lint"
+version = "1.0.0"
+description = "Fast, production-grade Conventional Commits & Scope Linter CLI with ticket enforcement, git hook support, and CI integrations."
+readme = "README.md"
+authors = [
+    { name = "slopggobblercobbler81" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = [
+    "git",
+    "conventional-commits",
+    "commit-lint",
+    "git-hook",
+    "developer-tools",
+    "ci",
+    "ticket-validation"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "PyYAML>=6.0"
+]
+
+[project.scripts]
+commit-scope-lint = "commit_scope_lint.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/slopggobblercobbler81/commit-scope-lint"
+Repository = "https://github.com/slopggobblercobbler81/commit-scope-lint"
+Issues = "https://github.com/slopggobblercobbler81/commit-scope-lint/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["commit_scope_lint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --strict-markers"

@@ -1,0 +1,7 @@
+- id: commit-scope-lint
+  name: commit-scope-lint
+  description: Lint commit messages against Conventional Commits & Scope rules
+  entry: commit-scope-lint --file
+  language: python
+  stages: [commit-msg]
+  always_run: true
