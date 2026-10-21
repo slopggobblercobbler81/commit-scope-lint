@@ -394,3 +394,7 @@ def normalize_scope_case(s: str) -> str:
 def is_allowed_ticket_prefix(ticket: str, prefixes: List[str]) -> bool:
     """Returns True if ticket reference starts with one of the allowed issue prefixes."""
     return any(ticket.startswith(f"{p}-") for p in prefixes)
+
+def count_commit_body_lines(body: str) -> int:
+    """Returns number of non-empty content lines in commit body."""
+    return len([line for line in body.splitlines() if line.strip()])

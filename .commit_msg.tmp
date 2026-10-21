@@ -1,5 +1,5 @@
-feat(rules): add is_allowed_ticket_prefix validation helper
+feat(rules): add count_commit_body_lines utility helper
 
-Provide helper validating issue tracker ticket identifier prefixes against allowlist.
+Provide helper calculating non-empty paragraph line count in commit messages.
 
 Co-authored-by: Stephen Cork <slopggobblercobbler81@users.noreply.github.com>
