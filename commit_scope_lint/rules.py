@@ -382,3 +382,7 @@ def is_valid_scope_length(scope: str, min_len: int = 1, max_len: int = 50) -> bo
     """Check if scope length falls within permitted boundary limits."""
     s = scope.strip()
     return min_len <= len(s) <= max_len
+
+def is_kebab_or_snake(s: str) -> bool:
+    """Returns True if string matches valid kebab-case or snake_case format."""
+    return bool(re.match(r"^[a-z0-9]+([_\-][a-z0-9]+)*$", s))
