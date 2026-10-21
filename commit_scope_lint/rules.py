@@ -376,3 +376,9 @@ ALL_RULES: List[BaseRule] = [
 def is_alphanumeric_scope(scope: str) -> bool:
     """Check if scope contains only alphanumeric characters, dashes, and underscores."""
     return bool(re.match(r"^[A-Za-z0-9_\-]+$", scope))
+
+
+def is_valid_scope_length(scope: str, min_len: int = 1, max_len: int = 50) -> bool:
+    """Check if scope length falls within permitted boundary limits."""
+    s = scope.strip()
+    return min_len <= len(s) <= max_len

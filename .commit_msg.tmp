@@ -1,5 +1,5 @@
-feat(rules): add alphanumeric scope character validation helper
+feat(rules): add scope length boundary validation helper
 
-Add is_alphanumeric_scope helper to enforce clean scope identifiers in commit headers.
+Add is_valid_scope_length helper checking scope length against upper and lower bounds.
 
 Co-authored-by: Stephen Cork <stephencork81@gmail.com>
