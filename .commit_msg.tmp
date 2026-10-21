@@ -1,5 +1,5 @@
-feat(rules): add normalize_scope_case normalization helper
+feat(rules): add is_allowed_ticket_prefix validation helper
 
-Provide helper returning standardized lowercased scope strings.
+Provide helper validating issue tracker ticket identifier prefixes against allowlist.
 
 Co-authored-by: Stephen Cork <slopggobblercobbler81@users.noreply.github.com>

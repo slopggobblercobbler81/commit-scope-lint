@@ -390,3 +390,7 @@ def is_kebab_or_snake(s: str) -> bool:
 def normalize_scope_case(s: str) -> str:
     """Returns trimmed lowercase scope string."""
     return s.strip().lower()
+
+def is_allowed_ticket_prefix(ticket: str, prefixes: List[str]) -> bool:
+    """Returns True if ticket reference starts with one of the allowed issue prefixes."""
+    return any(ticket.startswith(f"{p}-") for p in prefixes)
