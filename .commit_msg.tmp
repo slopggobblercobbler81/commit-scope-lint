@@ -1,0 +1,5 @@
+feat(rules): add alphanumeric scope character validation helper
+
+Add is_alphanumeric_scope helper to enforce clean scope identifiers in commit headers.
+
+Co-authored-by: Stephen Cork <stephencork81@gmail.com>

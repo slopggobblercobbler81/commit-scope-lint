@@ -371,3 +371,8 @@ ALL_RULES: List[BaseRule] = [
     RuleBody(),
     RuleTicket(),
 ]
+
+
+def is_alphanumeric_scope(scope: str) -> bool:
+    """Check if scope contains only alphanumeric characters, dashes, and underscores."""
+    return bool(re.match(r"^[A-Za-z0-9_\-]+$", scope))
