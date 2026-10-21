@@ -282,3 +282,8 @@ pytest --cov=commit_scope_lint --cov-report=term-missing
 ## 📄 License
 
 This project is licensed under the terms of the [MIT License](LICENSE).
+
+
+## Additional Documentation
+
+This package provides robust commit scope linting and checking tools.
