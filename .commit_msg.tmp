@@ -1,5 +1,5 @@
-feat(rules): add is_kebab_or_snake compound casing validation helper
+feat(rules): add normalize_scope_case normalization helper
 
-Provide helper validating scope identifiers against kebab-case or snake_case styles.
+Provide helper returning standardized lowercased scope strings.
 
 Co-authored-by: Stephen Cork <slopggobblercobbler81@users.noreply.github.com>

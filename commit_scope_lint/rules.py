@@ -386,3 +386,7 @@ def is_valid_scope_length(scope: str, min_len: int = 1, max_len: int = 50) -> bo
 def is_kebab_or_snake(s: str) -> bool:
     """Returns True if string matches valid kebab-case or snake_case format."""
     return bool(re.match(r"^[a-z0-9]+([_\-][a-z0-9]+)*$", s))
+
+def normalize_scope_case(s: str) -> str:
+    """Returns trimmed lowercase scope string."""
+    return s.strip().lower()
